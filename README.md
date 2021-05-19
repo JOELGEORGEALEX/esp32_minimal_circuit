@@ -16,9 +16,24 @@ This is just a minimal setup to run the ESP 32 in a stable enironment. This conf
 ![SCHEME_ESP32](/0001.jpg "pins1")
 ![SCHEME_ESP32](/0002.jpg "pins2")
 ---
-### GPIO PINs usage
+### ESP32 boot selection modes
 
-| Syntax | Description |
+The state of pins GPIO0 & GPIO2 affect the boot mode of ESP32
+
+In normal boot mode the GPIO0 pin should be high and the value of GPIO2 is not an influencer
+
+| Pins| STATE |
 | --- | ----------- |
-| Header | Title |
-| Paragraph | Text |
+| EN | HIGH |
+| GPIO0 | HIGH |
+| GPIO2 | *ignored* |
+
+To enter bootloader mode and flash a program the pin GPIO0 should be LOW on restart(To restart the EN pin needs to be shifted from HIGH TO LOW for a second). The value of GPIO2 pine should be floating/LOW and shouldn't be HIGH
+
+| Pins| STATE |
+| --- | ----------- |
+| EN | LOW |
+| GPIO0 | LOW |
+| GPIO2 | LOW/ *unconnected* |
+
+
