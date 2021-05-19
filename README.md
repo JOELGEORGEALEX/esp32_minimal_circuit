@@ -7,7 +7,9 @@ This is just a minimal setup to run the ESP 32 in a stable enironment. This conf
 ***ESP32 WROOM32 pinout diagram***
 --
 ![SCHEME_ESP32](/esp32-pinout-chip-ESP-WROOM-32.png "schematic")
-![SCHEME_ESP32](/pinesp.png "schematic")
+***GPIO PINs usage***
+
+<img src="/pinesp.JPG" width="1700" height="2000" />
 | Syntax | Description |
 | --- | ----------- |
 | Header | Title |
