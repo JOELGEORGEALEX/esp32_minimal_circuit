@@ -4,5 +4,10 @@ This is just a minimal setup to run the ESP 32 in a stable enironment. This conf
 ##  Schematics in EAGLE
 ![SCHEME_ESP32](/esp32_minimal_scheme.png "schematic")
 ## Theoretical part
-**ESP32 WROOM32 pinout diagram
+***ESP32 WROOM32 pinout diagram***
+--
 ![SCHEME_ESP32](/esp32-pinout-chip-ESP-WROOM-32.png "schematic")
+| Syntax | Description |
+| --- | ----------- |
+| Header | Title |
+| Paragraph | Text |
